@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <link rel="stylesheet" href="indexr.css">
+   
+</head>
+<body>
+   
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <h2>机器学习import AI as yu</h2>
+
+                <button>+&nbsp;&nbsp;添加</button>
+                <div>论文URL<input type="text"></div>
+                <div> 论文名称<input type="text"></div>  
+            </div>
+
+            <div class="content">
+
+                <ul class="text">
+                    <li v-for="(item,index) in textsql">
+                        <button id="op">展开</button>
+                        <input type="checkbox">
+                        <span>{{item.title}} <a :href="item.URLs">链接</a></span>
+                        <button class="de">删除</button>
+                        <span class="de">浏阅数：{{item.number}}</span>
+                    </li>
+                   
+                </ul>
+
+            </div>
+            <div class="footer">
+                    <button>删除选中的文章</button>
+                    
+                    <div>{{dates}}</div>
+                    <div>当前总文章阅读数</div>
+            </div>
+        </div>
+    </div>
+    <script src="vue.js"></script>
+    <script src="indexr.js"></script>
+</body>
+</html>

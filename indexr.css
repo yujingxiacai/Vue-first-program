@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    margin:100px auto;
+    width: 1200px;
+}
+.container{
+    width: 100%;
+    
+}
+
+
+/* header开始 */
+.header {
+    background: #cccccc;
+    height: 32px;
+    line-height: 32px
+}
+.header h2{
+    float: left;
+    vertical-align: middle;
+    margin-left: 30px
+}
+.header  div{
+    float: right;
+}
+.header  div input{
+    border: 0;
+    height: 26px;
+}
+.header  button{
+    float: right;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 30px
+}
+
+/* header 结束 */
+
+/* content开始 */
+li{
+list-style: none;   
+margin-top: 10px;
+text-align: center;
+height: 39px;
+line-height: 39px;
+background:  #80ffe5
+}
+li #op,li input{
+float: left;
+height: 39px;
+line-height: 39px;
+}
+li input{
+    margin-left: 26px;
+}
+.content span{
+    color:  #808080;
+    font-weight: bold;
+    font-size: 20px;
+}
+li .de{
+float: right;
+height: 39px;
+line-height: 39px;
+font-size: 12px;
+}
+li a{
+    color:  #808080;
+    text-decoration: none;
+    font-size: 16px
+}
+/* content结束 */
+
+
+/* footer开始 */
+.footer{
+    
+    width: 100%;
+  
+    height: 32px;
+}
+.footer button{
+    float: left;
+}
+.footer div{
+    float: right;
+}
+/* footer结束 */
+
