@@ -75,10 +75,13 @@ export default {
             this.$refs.musicAudio.pause();
         },
         change(index){
+            console.log(this.musicList);
              this.musicList.forEach((element,indexs)=> {
                 if(indexs==index){
                      this.musicSrc=element.src;
                      this.imgT=element.musicImgSrc;
+                     this.musicTitle=element.title;
+                     this.musicAuthor=element.author;
 
                 }
             });
@@ -90,7 +93,7 @@ export default {
             this.change(index)
             // axios.get(urlMusic).then(res=>{ 
             // this.musicList=res.data.musicData;
-            // console.log(this.musicList);
+            console.log(this.musicSrc);
     //    })
           
      },
